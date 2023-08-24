@@ -1,0 +1,4 @@
+Lista = ["um", "dois", "três", "quatro", "cinco"]
+
+if "dois" in Lista:
+    print(Lista[1])

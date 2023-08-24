@@ -1,0 +1,10 @@
+cidade1 = cidade2 = cidade3 = cidade4 = cidade5 = 0
+cidades = [cidade1, cidade2, cidade3, cidade4, cidade5]
+for i in range(len(cidades)):
+    c = int(input("Digite o código da cidade: "))
+    cidades[i] = c
+print(cidades)
+
+v = int(input("Digite o número de veículos de passeio: "))
+t = int(input("Digite o número de acidentes de trânsito com vítimas: "))
+

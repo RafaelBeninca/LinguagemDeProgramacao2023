@@ -1,0 +1,32 @@
+Jose = []
+Joao = []
+Pedro = []
+Romero = []
+Nulo = []
+Branco = []
+
+while True:
+    e = int(input("Escolha uma das opções: \n1-Votar em José \n2-Votar em João\n3-Votar em Pedro \n4-Votar em Romero \n5-Votar Nulo \n6-Votar Branco \n7-Sair\n"))
+    if e == 1:
+        Jose.append(1)
+    elif e == 2:
+        Joao.append(1)
+    elif e == 3:
+        Pedro.append(1)
+    elif e == 4:
+        Romero.append(1)
+    elif e == 5:
+        Nulo.append(1)
+    elif e == 6:
+        Branco.append(1)
+    elif e == 7:
+        break
+total = sum(Jose) + sum(Joao) + sum(Pedro) + sum(Romero) + sum(Nulo)
+nuloporcent = ((sum(Nulo)*100)/total)
+brancoporcent = ((sum(Branco)*100)/total)
+
+print(f"Votos de cada candidato: \nJosé: {sum(Jose)}, \nJoão: {sum(Joao)}, \nPedro: {sum(Pedro)}, \nRomero: {sum(Romero)}")
+print(f"Votos nulos: {sum(Nulo)}")
+print(f"Votos em branco: {sum(Branco)}")
+print(f"Porcentagem de votos em nulo sobre o total de votos: {nuloporcent}%")
+print(f"Porcentagem de votos em branco sobre o total de votos: {brancoporcent}%")

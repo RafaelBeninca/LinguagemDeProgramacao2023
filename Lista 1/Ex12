@@ -1,0 +1,34 @@
+l1 = ["um", "dois", "três", "três", "três", "três"]
+lc = 0
+
+for i in l1:
+    if i == "três":
+        lc+=1
+print(f"O item 3 apareceu na lista {lc} vezes.")
+
+f = ["Filme1", "Filme2", "Filme3", "Filme4"]
+l = ["Livro1", "Livro2", "Livro3", "Livro4"]
+j = ["Jogo1", "Jogo2", "Jogo3", "Jogo4"]
+e = ["Esporte1", "Esporte2", "Esporte3", "Esporte4"]
+
+#a)
+f.append("Filme5")
+f.append("Filme6")
+
+l.append("Livro5")
+l.append("Livro6")
+
+f.append("Jogo5")
+f.append("Jogo6")
+
+l.append("Esporte5")
+l.append("Esporte8")
+
+#b)
+ltotal = f + l + j + e
+
+#c)
+print(l[2])
+
+#d)
+e.remove("Esporte1")

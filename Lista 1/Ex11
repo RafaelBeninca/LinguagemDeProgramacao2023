@@ -1,0 +1,9 @@
+n = input("Digite o nome do funcionário: ")
+h = int(input("Digite o número de horas trabalhadas: "))
+v = float(input("Digite o valor da hora trabalhada: "))
+
+sb = (h*v)
+
+i = round(sb*0.98)
+
+print(f"Salário final: {i}")

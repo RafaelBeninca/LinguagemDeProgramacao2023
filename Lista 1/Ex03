@@ -1,0 +1,4 @@
+a = int(input("Digite uma nota: "))
+b = int(input("Digite outra nota: "))
+
+print(a + b / 2)

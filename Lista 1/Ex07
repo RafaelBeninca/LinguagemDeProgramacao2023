@@ -1,0 +1,4 @@
+a = float(input("Digite o valor de um produto: "))
+
+print(f"O valor do produto com 5% de desconto é de: {round(a*0.95)}")
+print(f"O valor do produto com 15% de aumento é de: {round(a*1.15)}")
