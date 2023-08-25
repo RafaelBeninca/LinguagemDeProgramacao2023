@@ -1,0 +1,10 @@
+#Faça um programa que pergunte a temperatura atual para o usuário e mostre uma mensagem na
+#tela dizendo se está “quente”, “frio” ou “agradável”.
+t = float(input("Digite a temperatura atual: "))
+
+if t <= 18:
+    print("Frio")
+elif t >=19 and t<30:
+    print("Agradável")
+else:
+    print("Quente")

@@ -1,0 +1,12 @@
+#Faça um programa que pergunte ao usuário se ele quer passar uma temperatura de Fahrenheit
+#para Celsius ou de Celsius para Fahrenheit, e que, a partir da resposta do usuário, faça a devida
+#conversão.
+t = float(input("Digite a temperatura atual: "))
+x = int(input("Escolha a medida de temperatura da temperatura inserida: \n1 - Celcius \n2 - Fahrenheit\n"))
+
+if x == 1:
+    print(f"Valor em Fahrenheit: {t*1.8+32}")
+elif x == 2:
+    print(f"Valor em Celcius: {(t-32)/1.8}")
+else:
+    print("Medida não encontrada.")

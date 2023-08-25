@@ -1,10 +1,37 @@
-cidade1 = cidade2 = cidade3 = cidade4 = cidade5 = 0
-cidades = [cidade1, cidade2, cidade3, cidade4, cidade5]
-for i in range(len(cidades)):
+# Foi feita uma estatística em cinco cidades brasileiras para coletar dados sobre acidentes de trânsito. Foram
+#obtidos os seguintes dados:
+#a. Código da cidade; (digitado pelo usuário)
+#b. Número de veículos de passeio (em 1999); (digitado pelo usuário)
+#c. Número de acidentes de trânsito com vítimas (em 1999). (digitado pelo usuário)
+#Deseja-se saber:
+#b. Qual o maior e menor índice de acidentes de transito e a que cidade pertence;
+#c. Qual a média de veículos nas cinco cidades juntas;
+#d. Qual a média de acidentes de trânsito nas cidades com menos de 2.000 veículos de passeio.
+c1 = c2 = c3 = c4 = c5 = 0
+v1 = v2 = v3 = v4 = v5 = 0
+t1 = t2 = t3 = t4 = t5 = 0
+cs = [c1, c2, c3, c4, c5]
+vs = [v1, v2, v3, v4, v5]
+ts = [t1, t2, t3, t4, t5]
+z = []
+valz = 0
+y = 0
+w = 0
+for i in range(len(cs)):
     c = int(input("Digite o código da cidade: "))
-    cidades[i] = c
-print(cidades)
+    v = int(input("Digite o número de veículos: "))
+    t = int(input("Digite o número de acidentes: "))
+    cs[i] = c
+    vs[i] = v
+    ts[i] = t
+    if t < 2000:
+        z.append(t)
+        valz+=1
+y = (sum(vs) / 5)
+w = (sum(z)/valz)
 
-v = int(input("Digite o número de veículos de passeio: "))
-t = int(input("Digite o número de acidentes de trânsito com vítimas: "))
+print(f"Maior índice de acidentes: {max(ts)}")
+print(f"Menor índice de acidentes: {min(ts)}")
+print(f"Média de veículos nas cinco cidades juntas: {y}")
+print(f"Média de veículos em todas as cidades com menos de 2000 veículos: {w}")
 

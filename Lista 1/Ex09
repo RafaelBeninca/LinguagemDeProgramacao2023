@@ -1,3 +1,6 @@
+#Construir um programa que leia nome e valor em dinheiro (reais) de uma pessoa. Calcule e retorne uma
+#mensagem com o valor convertido para Dólar e calcule e retorne uma mensagem com o valor convertido para
+#Euros.
 r = float(input("Digite um valor de dinheiro em reais: "))
 
 print(f"Valor em Dólares: {r*4.88}")

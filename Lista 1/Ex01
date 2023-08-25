@@ -1,3 +1,5 @@
+#Faça um script que leia dois números e retorne como resultado a soma deles. Faça um script que leia algo
+#pelo teclado e mostra na tela o seu tipo de dado.
 # 1 a)
 a = int(input("Digite um número: "))
 b = int(input("Digite outro número: "))
