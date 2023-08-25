@@ -1,0 +1,17 @@
+#Numa eleição existem três candidatos. Faça um programa que peça o número total de eleitores. Peça para
+#cada eleitor votar e ao final mostrar o número de votos de cada candidato
+e = int(input("Digite o número total de eleitores: "))
+c1 = c2 = c3 = 0
+
+for i in range(e):
+    val = int(input("Qual candidato você quer votar? \n1 - Candidato 1 \n2 - Candidato 2 \n3 - Candidato 3\n"))
+    if val==1:
+        c1+=1
+    elif val==2:
+        c2+=1
+    elif val==3:
+        c3+=1
+    else:
+        print("Candidato não encontrado, voto anulado")
+    
+print(f"Número total de votos para cada eleitor: \nEleitor 1: {c1} \nEleitor 2: {c2} \nEleitor 3: {c3}")

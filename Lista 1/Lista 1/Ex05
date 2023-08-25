@@ -1,0 +1,6 @@
+#Faça um programa que leia um valor em metros e o exiba convertido em centímetros e milímetros.
+a = int(input("Digite um número em metros: "))
+
+print(f"O número em metros é: {a}m")
+print(f"O número em centimetros é: {a*100}cm")
+print(f"O número em milímetros é: {a*1000}mm")

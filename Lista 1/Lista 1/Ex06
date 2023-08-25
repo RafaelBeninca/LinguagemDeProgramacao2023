@@ -1,0 +1,11 @@
+#Faça um programa que leia quanto dinheiro uma pessoa tem na carteira e mostre quantos Dólares ela pode
+#comprar.
+#Considere: US$ 1.00 = R$ 5.41
+a = float(input("Digite um valor de dinheiro: "))
+q = 0
+
+while (a >= 5.41):
+    a = a-5.41
+    q+=1
+
+print(f"O dinheiro pode comprar {q} Dólares com o número de reais inserido")

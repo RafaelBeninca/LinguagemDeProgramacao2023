@@ -1,0 +1,23 @@
+#Faça um programa que jogue par ou impar com o computador. O jogo será interrompido quando o jogador
+#perder. Mostre ao final, o total de vitórias consecutivas que o jogador conquistou no jogo
+v = 0
+while True:
+    a = input("Escolha impar ou par (I/P)")
+    b = int(input("Escolha um número de um até 10"))
+    if a == "P":
+        if (b % 2) > 0:
+            print("Derrota")
+            break
+        else:
+            print("Vitória")
+            v+=1
+    elif a == "I":
+        if (b % 2) > 0:
+            print("Vitória")
+            v+=1
+        else:
+            print("Derrota")
+            break
+    else:
+        print("Valor não identificado")
+print(f"Número de vitõrias: {v}")
